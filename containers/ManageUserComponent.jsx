@@ -74,7 +74,7 @@ onSubmit()
       email: this.state.user.email,
       phone: this.state.user.phone,
       dob: this.state.user.dob,
-      active: false
+      active: this.state.user.active
     }
     this.props.onSubmit(this.state.user.id,postData,this.state.type);
   }
