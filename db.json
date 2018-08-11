@@ -1,0 +1,121 @@
+{
+  "users": [
+    {
+      "first_name": "Paul",
+      "last_name": "Adam",
+      "email": "paul.adam@gmail.com",
+      "phone": "9821153547",
+      "dob": "Thu Aug 03 1995 00:00:00 GMT+0530 (India Standard Time)",
+      "active": false,
+      "id": 1
+    },
+    {
+      "first_name": "Greg",
+      "last_name": "William",
+      "email": "wil.greg@yahoo.com",
+      "phone": "9121133547",
+      "dob": "Thu Aug 12 1993 00:00:00 GMT+0530 (India Standard Time)",
+      "active": false,
+      "id": 2
+    },
+    {
+      "first_name": "Charles",
+      "last_name": "Fernandes",
+      "email": "charles.f@rediffmail.com",
+      "phone": "9221133547",
+      "dob": "Tue Feb 07 1984 00:00:00 GMT+0530 (India Standard Time)",
+      "active": false,
+      "id": 3
+    },
+    {
+      "first_name": "dsfdsgfdgfgfd",
+      "last_name": "gdfgs",
+      "email": "dsfgfsdg",
+      "phone": "dsfgfdgsdf",
+      "dob": "2018-08-14",
+      "active": true,
+      "id": 4
+    },
+    {
+      "first_name": "Prabhakar",
+      "last_name": "Matkar",
+      "email": "fsdfdsfdsf",
+      "phone": "9999999999",
+      "dob": "2018-08-06",
+      "active": true,
+      "id": 5
+    },
+    {
+      "first_name": "test",
+      "last_name": "test",
+      "email": "twst",
+      "phone": "tghvhbds",
+      "dob": "2018-08-08",
+      "active": true,
+      "id": 6
+    },
+    {
+      "first_name": "prabhaar",
+      "last_name": "matkae",
+      "email": "hjgfdsf@",
+      "phone": "675",
+      "dob": "2018-08-14",
+      "active": false,
+      "id": 7
+    },
+    {
+      "first_name": "sdfdsf",
+      "last_name": "sdfdsf",
+      "email": "sdfdsf@",
+      "phone": "999999999",
+      "dob": "2018-08-14",
+      "active": false,
+      "id": 8
+    },
+    {
+      "first_name": "gfgh",
+      "last_name": "fghgdh",
+      "email": "fhgfg@",
+      "phone": "8888899999",
+      "dob": "2018-08-08",
+      "active": false,
+      "id": 9
+    },
+    {
+      "first_name": "Prabhakar",
+      "last_name": "Matkar",
+      "email": "abc@",
+      "phone": "1023456789",
+      "dob": "2018-08-14",
+      "active": false,
+      "id": 10
+    },
+    {
+      "first_name": "test",
+      "last_name": "test",
+      "email": "test@",
+      "phone": "7888888888",
+      "dob": "Fri Aug 03 2018 00:00:00 GMT+0530 (India Standard Time)",
+      "active": false,
+      "id": 11
+    },
+    {
+      "first_name": "fdsfdsg",
+      "last_name": "gfdgdfgd",
+      "email": "fdgd@",
+      "phone": "3453454356",
+      "dob": "Sun Aug 12 2018 00:00:00 GMT+0530 (India Standard Time)",
+      "active": false,
+      "id": 12
+    },
+    {
+      "first_name": "dewftre",
+      "last_name": "gfdgdfg",
+      "email": "gdfgers@",
+      "phone": "4444444444",
+      "dob": "Sun Aug 12 2018 01:52:35 GMT+0530 (India Standard Time)",
+      "active": false,
+      "id": 13
+    }
+  ]
+}
