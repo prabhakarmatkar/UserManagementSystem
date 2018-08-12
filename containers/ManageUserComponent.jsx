@@ -18,7 +18,7 @@ class ManageUserComponent extends React.Component {
       dobError: false}
         }
     }
-    componentWillMount()
+    componentDidMount()
     {
       this.validate.bind(this)();
     }

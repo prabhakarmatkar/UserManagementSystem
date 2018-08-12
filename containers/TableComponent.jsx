@@ -5,21 +5,21 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
-const row = (x,i,header) =>
+const row = (d,i,header) =>
 {
     return <TableRow key={i}>
         {
-            header.map((y,k) => 
+            header.map((h,k) => 
         {
-            if(y.formatter !== undefined)
+            if(h.formatter !== undefined)
             {
                 return <TableCell>
-                {y.formatter(x)} </TableCell>
+                {h.formatter(d)} </TableCell>
             }
             else
             {
                 return <TableCell>
-                {x[y.prop]} </TableCell>
+                {d[h.prop]} </TableCell>
             }
         })
         }
@@ -33,15 +33,15 @@ export default ({data,header}) => {
         <TableHead>
           <TableRow>
               {
-                header.map((x,i) => 
+                header.map((h,i) => 
                 {
-                    return <TableCell key={i}>{x.name}</TableCell>
+                    return <TableCell key={i}>{h.name}</TableCell>
                 })
               }
           </TableRow>
         </TableHead>
         <TableBody>
-            {data.map((x,i) => row(x,i,header))}
+            {data.map((d,i) => row(d,i,header))}
         </TableBody>
       </Table>
   );

@@ -13,7 +13,7 @@ class UserDetailComponent extends React.Component {
             user:{}
         }
     }
-    componentWillMount()
+    componentDidMount()
     {
         this.setState({loading:true});
         actions.getUserDetails(this.setUsers.bind(this),this.props.match.params.id);

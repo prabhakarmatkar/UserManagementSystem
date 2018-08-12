@@ -143,7 +143,7 @@ class UsersComponent extends React.Component {
         actions.getUsers(this.setUsers.bind(this));
     }
 
-    componentWillMount()
+    componentDidMount()
     {
         this.setState({loading:true});
         actions.getUsers(this.setUsers.bind(this));
