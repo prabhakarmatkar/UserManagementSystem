@@ -8,9 +8,6 @@ class ViewUserComponent extends React.Component {
         this.state={
         }
     }
-    componentWillMount()
-    {
-    }
 
    render() {
       return (

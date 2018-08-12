@@ -43,10 +43,6 @@ class UsersComponent extends React.Component {
                         name:"Dob",
                         prop:"dob",
                         formatter:(row) => {
-                            // var date = new Date();
-                            // date.toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"}).replace(/\s/g,'-');
-                            // return(new Date(row.dob).toLocaleDateString("en-au", {year: "numeric", month: "short",day: "numeric"})
-                            // .replace(/\./g,''));
                             return(commonFunctions.formatDob(row.dob));
                         }
                     },
@@ -120,17 +116,6 @@ class UsersComponent extends React.Component {
         }
     }
 
-    // calculateAge(dob) {
-    //     var today = new Date();
-    //     var birthDate = new Date(dob);
-    //     var age = today.getFullYear() - birthDate.getFullYear();
-    //     var m = today.getMonth() - birthDate.getMonth();
-    //     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    //         age--;
-    //     }
-    //     return age;
-    // }
-
     viewUser(row)
     {
         this.state.viewUser = row;
@@ -162,7 +147,6 @@ class UsersComponent extends React.Component {
     {
         this.setState({loading:true});
         actions.getUsers(this.setUsers.bind(this));
-        //this.getUsers(this.setUsers.bind(this));
     }
 
     onSubmit(id,data,type)
@@ -209,19 +193,6 @@ class UsersComponent extends React.Component {
     {
         this.setState({users : data,loading:false});
         this.setState({displayUsers : data});
-    }
-
-    userData()
-    {
-        return this.state.users.map((data,key) =>
-            {
-                return (
-                    <li>
-                    <Link to={"/user/" + data.id}>{data.name}</Link>
-                    </li>
-                );
-            }
-        );
     }
 
    render() {
@@ -291,24 +262,6 @@ class UsersComponent extends React.Component {
                                 user={this.state.manageUser}/>
               </DialogContent>
                 </Dialog>
-
-            {/*<ul>
-            {this.userData()}
-            </ul>*/}
-            {/*test
-            <ul>
-            {
-                this.state.users.map((data,key) =>
-            (
-
-                    <li>
-                    <Link to={"/user/" + data.id}>{data.name}</Link>
-                    </li>
-            
-            )
-        )
-    }
-</ul>*/}
          </div>
       );
    }

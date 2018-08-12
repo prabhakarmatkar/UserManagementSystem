@@ -1,6 +1,5 @@
 import React from 'react';
 import {BrowserRouter as Router,HashRouter,Route,Link} from 'react-router-dom';
-import HomeComponent from "./containers/HomeComponent.jsx";
 import UsersComponent from "./containers/UsersComponent.jsx";
 import UserDetailComponent from "./containers/UserDetailComponent.jsx";
 import AppBar from '@material-ui/core/AppBar';
@@ -20,22 +19,8 @@ class App extends React.Component {
           User Management System
           </Typography>
         </Toolbar>
-      </AppBar>
-                {/*<ul>
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/users">Users</Link>
-        </li>
-                </ul>
-              
-              <hr />
-            */}      
-
-
-                <Route exact path="/"component={HomeComponent}/>
-                <Route path="/home" component={HomeComponent}/>
+      </AppBar>   
+                <Route exact path="/"component={UsersComponent}/>
                 <Route path="/users" component={UsersComponent}/>
                 <Route path="/user/:id" component={UserDetailComponent}/>
                 </div>

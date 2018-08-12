@@ -101,7 +101,6 @@ onChange(e)
             error = {this.state.errors.first_nameError}
           id="first_name"
           label="First Name"
-        //   className={}
           value={this.state.user.first_name}
           onChange={e => this.onChange(e)}
           margin="normal"
@@ -110,7 +109,6 @@ onChange(e)
         <TextField
           id="last_name"
           label="Last Name"
-        //   className={}
           value={this.state.user.last_name}
           onChange={e => this.onChange(e)}
           margin="normal"
@@ -120,7 +118,6 @@ onChange(e)
         <TextField
           id="email"
           label="email"
-        //   className={}
           value={this.state.user.email}
           onChange={e => this.onChange(e)}
           margin="normal"
@@ -131,7 +128,6 @@ onChange(e)
           id="phone"
           label="Phone"
           type="number"
-        //   className={}
           value={this.state.user.phone}
           onChange={e => this.onChange(e)}
           margin="normal"
@@ -140,16 +136,6 @@ onChange(e)
           showMask
         />
         <br/>
-        {/*<TextField
-          id="dob"
-          type="date"
-        //   className={}
-          value={this.state.user.dob}
-          maxDate = {new Date()}
-          onChange={e => this.onChange(e)}
-          margin="normal"
-          error={this.state.errors.dobError}
-        />*/}
         <DatePicker
             label="Date of Birth"
             id="dob"
